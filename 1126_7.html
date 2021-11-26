@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 계산</title>
+</head>
+<body>
+    숫자 입력 : <input type="text" name="num" id="num"><br>
+    <button onclick="printSquare()" >제곱하기</button>
+    <script>
+        // function printSquare(){
+        //     const input = document.getElementById("num").value;
+        //     const num = parseInt(input);
+        //     const square = num*num;
+        //     if(input=="")
+        //         alert("값을 입력하세요.");
+        //     else
+        //         alert("제곱값 : " + square);
+        // }
+
+        //패턴은 암기 (값 입력 받고 버튼 누르면 출력하는거)
+
+        function printSquare(){
+            const input = parseInt(document.getElementById("num").value);
+            const square = input * input;
+            if(input == "")
+                alert("값을 입력하세요.");
+            else 
+                alert("제곱값 = " + square);
+        }
+    </script>
+</body>
+</html>
