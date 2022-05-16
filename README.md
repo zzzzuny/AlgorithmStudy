@@ -1,1 +1,1 @@
-# icia_study
+# AlgorithmStudy
